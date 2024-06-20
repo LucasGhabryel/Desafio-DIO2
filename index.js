@@ -1,29 +1,36 @@
 
 
 let hero = "Lucas"
+let heroLevel = ""
 let resultado = getRankedAvarage()
-console.log(resultado)
 
 if (resultado <= 10){
-    console.log("O Heroi " + hero + " Está Ferro!");
+    heroLevel = "Ferro!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );    
 
 }else if (resultado >= 11 && resultado <= 20){
-    console.log("O Heroi" + hero + " Está Bronze!");
+    heroLevel = "Bronze!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );   
 
 }else if (resultado >= 21 && resultado <= 50){
-    console.log("O Heroi" + hero + " Está Prata!");
+    heroLevel = "Prata!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );   
 
 }else if (resultado >= 51 && resultado <= 80){
-    console.log("O Heroi" + hero + " Está Ouro!"); 
+    heroLevel = "Ouro!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );    
 
 }else if (resultado >= 81 && resultado <= 90){
-    console.log("O Heroi" + hero + " Está Diamante!"); 
+    heroLevel = "Diamante!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );    
 
 }else if (resultado >= 91 && resultado <= 100){
-    console.log("O Heroi" + hero + " Está Lendário!"); 
+    heroLevel = "Lendário!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );   
 
 }else if (resultado >= 101){
-    console.log("O Heroi" + hero + " Está Imortal!");     
+    heroLevel = "Imortal!"
+    console.log("O Heroi " + hero + " tem o saldo de " + resultado + " e está no nivel de " + heroLevel );     
 
 }    
 function getRankedAvarage(){
@@ -35,7 +42,7 @@ function getRankedAvarage(){
    
    let lose = 1
 
-   while(lose < 1 ){
+   while(lose < 10){
        lose++
     }
      
